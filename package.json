@@ -1,0 +1,25 @@
+{
+  "name": "@pushpak/mavlink",
+  "version": "0.0.1",
+  "description": "MAVLink core and transport layer for PUSHPAK GCS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mavlink",
+    "ardupilot",
+    "gcs"
+  ],
+  "author": "PUSHPAK GCS",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "mavlink-mappings": "^1.0.21-20250824-1"
+  }
+}
