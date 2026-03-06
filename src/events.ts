@@ -12,6 +12,10 @@ export type MavlinkEvent =
   | { type: "mavlink:transport_closed"; transport: string }
   | { type: "mavlink:transport_error"; transport: string; error: Error | string }
 
+  // Vehicle presence
+  | { type: "mavlink:vehicle_lost"; sysid: number; lastSeen: number }
+  | { type: "mavlink:vehicle_found"; sysid: number }
+
   // Protocol-level facts
   | {
       type: "mavlink:heartbeat";

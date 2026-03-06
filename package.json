@@ -20,6 +20,8 @@
     "typescript": "^5.4.0"
   },
   "dependencies": {
-    "mavlink-mappings": "^1.0.21-20250824-1"
+    "mavlink-mappings": "^1.0.21-20250824-1",
+    "node-mavlink": "^2.3.0",
+    "serialport": "^13.0.0"
   }
 }
