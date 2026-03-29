@@ -1,5 +1,5 @@
 import dgram from "dgram";
-import { Transport } from "./Transport";
+import { Transport } from "./Transport.js";
 
 export class UdpTransport implements Transport {
   private socket = dgram.createSocket("udp4");

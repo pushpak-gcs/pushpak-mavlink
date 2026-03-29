@@ -1,5 +1,5 @@
 import { SerialPort } from "serialport";
-import { Transport } from "./Transport";
+import { Transport } from "./Transport.js";
 
 export interface SerialTransportOptions {
   /** Serial port path */

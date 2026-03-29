@@ -1,0 +1,110 @@
+/**
+ * ArduPilot flight modes
+ * https://ardupilot.org/copter/docs/parameters.html#fltmode1-flight-mode-1
+ */
+
+export enum CopterMode {
+  STABILIZE = 0,
+  ACRO = 1,
+  ALT_HOLD = 2,
+  AUTO = 3,
+  GUIDED = 4,
+  LOITER = 5,
+  RTL = 6,
+  CIRCLE = 7,
+  LAND = 9,
+  DRIFT = 11,
+  SPORT = 13,
+  FLIP = 14,
+  AUTOTUNE = 15,
+  POSHOLD = 16,
+  BRAKE = 17,
+  THROW = 18,
+  AVOID_ADSB = 19,
+  GUIDED_NOGPS = 20,
+  SMART_RTL = 21,
+  FLOWHOLD = 22,
+  FOLLOW = 23,
+  ZIGZAG = 24,
+  SYSTEMID = 25,
+  AUTOROTATE = 26,
+  AUTO_RTL = 27
+}
+
+export enum PlaneMode {
+  MANUAL = 0,
+  CIRCLE = 1,
+  STABILIZE = 2,
+  TRAINING = 3,
+  ACRO = 4,
+  FLY_BY_WIRE_A = 5,
+  FLY_BY_WIRE_B = 6,
+  CRUISE = 7,
+  AUTOTUNE = 8,
+  AUTO = 10,
+  RTL = 11,
+  LOITER = 12,
+  TAKEOFF = 13,
+  AVOID_ADSB = 14,
+  GUIDED = 15,
+  INITIALISING = 16,
+  QSTABILIZE = 17,
+  QHOVER = 18,
+  QLOITER = 19,
+  QLAND = 20,
+  QRTL = 21,
+  QAUTOTUNE = 22,
+  QACRO = 23,
+  THERMAL = 24
+}
+
+export enum RoverMode {
+  MANUAL = 0,
+  ACRO = 1,
+  STEERING = 3,
+  HOLD = 4,
+  LOITER = 5,
+  FOLLOW = 6,
+  SIMPLE = 7,
+  AUTO = 10,
+  RTL = 11,
+  SMART_RTL = 12,
+  GUIDED = 15,
+  INITIALISING = 16
+}
+
+/**
+ * MAV_CMD enum values for common commands
+ */
+export enum MavCmd {
+  NAV_WAYPOINT = 16,
+  NAV_LOITER_UNLIM = 17,
+  NAV_LOITER_TURNS = 18,
+  NAV_LOITER_TIME = 19,
+  NAV_RETURN_TO_LAUNCH = 20,
+  NAV_LAND = 21,
+  NAV_TAKEOFF = 22,
+  NAV_LOITER_TO_ALT = 31,
+  DO_SET_MODE = 176,
+  DO_JUMP = 177,
+  DO_CHANGE_SPEED = 178,
+  DO_SET_HOME = 179,
+  DO_SET_RELAY = 181,
+  DO_REPEAT_RELAY = 182,
+  DO_SET_SERVO = 183,
+  DO_REPEAT_SERVO = 184,
+  DO_SET_ROI = 201,
+  DO_DIGICAM_CONTROL = 203,
+  DO_MOUNT_CONTROL = 205,
+  DO_SET_CAM_TRIGG_DIST = 206,
+  DO_PARACHUTE = 208,
+  DO_INVERTED_FLIGHT = 210,
+  DO_MOUNT_CONTROL_QUAT = 220,
+  DO_GUIDED_MASTER = 221,
+  DO_GUIDED_LIMITS = 222,
+  DO_FENCE_ENABLE = 207,
+  COMPONENT_ARM_DISARM = 400,
+  GET_HOME_POSITION = 410,
+  REQUEST_MESSAGE = 512,
+  SET_MESSAGE_INTERVAL = 511
+}
